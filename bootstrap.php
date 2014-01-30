@@ -4,7 +4,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Respect\Config\Container;
 use Respect\Relational\Mapper;
-use Respect\Relational\Sql;
 
 $env = getEnvironment();
 
