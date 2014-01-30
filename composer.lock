@@ -1,0 +1,291 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "a2f20fc595cd00c45069059221d605d8",
+    "packages": [
+        {
+            "name": "respect/config",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Respect/Config.git",
+                "reference": "1d7689ccb0c43153218b463a728f6c7130f1566a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Respect/Config/zipball/1d7689ccb0c43153218b463a728f6c7130f1566a",
+                "reference": "1d7689ccb0c43153218b463a728f6c7130f1566a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "@stable",
+                "respect/test": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Respect\\Config": "library"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Henrique Moody",
+                    "email": "henriquemoody@gmail.com",
+                    "homepage": "http://henriquemoody.com/"
+                },
+                {
+                    "name": "Alexandre Gomes Gaigalas",
+                    "email": "alexandre@gaigalas.net"
+                },
+                {
+                    "name": "Rogerio Prado de Jesus",
+                    "email": "rogeriopradoj@gmail.com"
+                },
+                {
+                    "name": "Thiago Rigo",
+                    "email": "thiagophx@gmail.com"
+                },
+                {
+                    "name": "Augusto Pascutti",
+                    "email": "augusto@phpsp.org.br"
+                },
+                {
+                    "name": "Nick Lombard",
+                    "email": "github@jigsoft.co.za"
+                },
+                {
+                    "name": "Ivo Nascimento",
+                    "email": "iannsp@gmail.com"
+                }
+            ],
+            "description": "A powerful, small, deadly simple configurator and dependency injection container made to be easy.",
+            "homepage": "https://github.com/Respect/Config",
+            "keywords": [
+                "config",
+                "dependency injection",
+                "dic",
+                "respect"
+            ],
+            "time": "2013-08-21 00:17:18"
+        },
+        {
+            "name": "respect/data",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Respect/Data.git",
+                "reference": "7da4b3bd9f4bf584de632f50d58a692ac091ec80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Respect/Data/zipball/7da4b3bd9f4bf584de632f50d58a692ac091ec80",
+                "reference": "7da4b3bd9f4bf584de632f50d58a692ac091ec80",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Respect\\Data": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD Style"
+            ],
+            "authors": [
+                {
+                    "name": "Henrique Moody",
+                    "email": "henriquemoody@gmail.com",
+                    "homepage": "http://henriquemoody.com/"
+                },
+                {
+                    "name": "Alexandre Gomes Gaigalas",
+                    "email": "alexandre@gaigalas.net"
+                },
+                {
+                    "name": "Rogerio Prado de Jesus",
+                    "email": "rogeriopradoj@gmail.com"
+                },
+                {
+                    "name": "Augusto Pascutti",
+                    "email": "augusto@phpsp.org.br"
+                },
+                {
+                    "name": "Nick Lombard",
+                    "email": "github@jigsoft.co.za"
+                }
+            ],
+            "description": "Persistence simplified",
+            "time": "2013-02-14 01:32:14"
+        },
+        {
+            "name": "respect/relational",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Respect/Relational.git",
+                "reference": "48613ed23e6a3bdce7f3978dcf4dc544805eec9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Respect/Relational/zipball/48613ed23e6a3bdce7f3978dcf4dc544805eec9c",
+                "reference": "48613ed23e6a3bdce7f3978dcf4dc544805eec9c",
+                "shasum": ""
+            },
+            "require": {
+                "respect/data": "0.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Respect\\Relational": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD Style"
+            ],
+            "authors": [
+                {
+                    "name": "Henrique Moody",
+                    "email": "henriquemoody@gmail.com",
+                    "homepage": "http://henriquemoody.com/"
+                },
+                {
+                    "name": "Alexandre",
+                    "email": "alexandre@gaigalas.net"
+                },
+                {
+                    "name": "Fábio da Silva Ribeiro",
+                    "email": "fabiorphp@gmail.com"
+                },
+                {
+                    "name": "Rogerio Prado de Jesus",
+                    "email": "rogeriopradoj@gmail.com"
+                },
+                {
+                    "name": "Claudson Oliveira",
+                    "email": "claudsonweb@gmail.com"
+                },
+                {
+                    "name": "Kinn Coelho Julião",
+                    "email": "kinncj@gmail.com",
+                    "homepage": "http://kinncj.com.br",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Thiago Rigo",
+                    "email": "thiagophx@gmail.com"
+                }
+            ],
+            "description": "Fluent Database Toolkit",
+            "homepage": "http://respect.li",
+            "time": "2013-05-06 19:12:12"
+        },
+        {
+            "name": "respect/rest",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Respect/Rest.git",
+                "reference": "94862d39202747c4ce0128ceea8ebab20acdc48d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Respect/Rest/zipball/94862d39202747c4ce0128ceea8ebab20acdc48d",
+                "reference": "94862d39202747c4ce0128ceea8ebab20acdc48d",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Respect\\Rest": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD Style"
+            ],
+            "authors": [
+                {
+                    "name": "Henrique Moody",
+                    "email": "henriquemoody@gmail.com",
+                    "homepage": "http://henriquemoody.com/"
+                },
+                {
+                    "name": "Alexandre",
+                    "email": "alexandre@gaigalas.net"
+                },
+                {
+                    "name": "kleberhs007",
+                    "email": "kleberhs007@yahoo.com"
+                },
+                {
+                    "name": "Leandro",
+                    "email": "lleitep3@gmail.com"
+                },
+                {
+                    "name": "Rogerio Prado de Jesus",
+                    "email": "rogeriopradoj@gmail.com"
+                },
+                {
+                    "name": "Anderson Casimiro",
+                    "email": "duodraco@gmail.com"
+                },
+                {
+                    "name": "Augusto Pascutti",
+                    "email": "augusto@phpsp.org.br"
+                },
+                {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com"
+                },
+                {
+                    "name": "eduardomarcate",
+                    "email": "eduardo@marcate.info"
+                },
+                {
+                    "name": "Nick Rawe",
+                    "email": "nickrawe2@gmail.com"
+                },
+                {
+                    "name": "Pablo Lacerda de Miranda",
+                    "email": "pablolmiranda@gmail.com"
+                },
+                {
+                    "name": "wesleyvicthor",
+                    "email": "w.v.mendes.s@gmail.com"
+                }
+            ],
+            "description": "Thin controller for RESTful applications",
+            "time": "2012-12-17 09:48:14"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "respect/rest": 20,
+        "respect/config": 20,
+        "respect/relational": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
