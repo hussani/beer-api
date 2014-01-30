@@ -1,0 +1,8 @@
+[appengine]
+    dsn = "<your AppEngine database dsn>"
+    user = "<your AppEngine database user>"
+    pass = "<your AppEngine database password>"
+[dev]
+    dsn = "<your development dsn>"
+    user = "<your development user>"
+    pass = "<your development password>"

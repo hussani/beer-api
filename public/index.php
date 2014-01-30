@@ -1,11 +1,14 @@
 <?php
 
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../bootstrap.php';
 
 use Respect\Rest\Router;
 
+
 $router = new Router();
 
-$router->get('/', function(){
-	echo "hello world";
+$router->get('/', function () use($mapper) {
+    echo "hello world";
 });
+
+$router->run();
