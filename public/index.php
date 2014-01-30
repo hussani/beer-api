@@ -4,6 +4,7 @@ require_once __DIR__ . '/../bootstrap.php';
 
 use Respect\Rest\Router;
 use Respect\Relational\Sql;
+use BeerApi\Api\Beer\All;
 
 $router = new Router();
 
@@ -15,14 +16,23 @@ $router->get('/api/beers/', function () use($mapper) {
     if (($offset < 0) || ($limit < 1)) {
         return setHttpErrors(400, "Bad Request");
     }
-
-    return $mapper->beers->breweries->fetchAll(Sql::orderBy('beers.id')
-        ->desc()->limit($offset, $limit));
+    $beersController = new BeerApi\Controller\Api\Beer\All($mapper);
+    return $beersController->get($limit, $offset);
 });
 
 $router->get('/api/beer/*', function ($id) use ($mapper){
-    return $mapper->beers[$id]->breweries->fetch();
+    $beerController = new BeerApi\Controller\Api\Beer\All($mapper);
+    return $beerController->get($id);
 });
+
+$router->always(
+    'Accept',
+    array(
+        'text/html' => 'var_dump'
+    )
+);
+
+$router->run();
 
 function setHttpErrors($number, $message)
 {
@@ -34,5 +44,3 @@ function setHttpErrors($number, $message)
         )
     );
 }
-
-$router->run();
